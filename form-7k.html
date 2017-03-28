@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="css/common.css">
+	<style type="text/css">
+		form {
+			margin-top: 30px;
+			margin-left: 30px;
+			font-size: 14px;
+		}
+		form .item {
+			margin-bottom: 10px;
+			line-height: 28px;
+		}
+		form .item .title {
+			float: left;
+			width: 200px;
+			text-align: right;
+		}
+		form .item .con {
+			float: left;
+			margin-left: 10px;
+			width: 400px;
+		}
+		input {
+			padding: 3px;
+		}
+		select {
+			width: 90px;
+			height: 26px;
+		}
+		label {
+			font-size: 14px;
+		}
+		form .select-box,
+		form .character-box {
+			float: left;
+			margin-right: 10px;
+		}
+		input[type=checkbox] {
+			height: 18px;
+		}
+		.submit-box {
+			margin-left: 210px;
+		}
+	</style>
+</head>
+<body>
+
+<form action="http://zhi.com:8080/getform" method="get">
+	<div class="item cf">
+		<div class="title">昵称：</div>
+		<div class="con">
+			<input type="text" name="username" placeholder="请输入昵称"/>
+		</div>
+	</div>
+	<div class="item cf">
+		<div class="title">性别：</div>
+		<div class="con">
+			<input type="radio" name="sex" value="1" id="male" checked="checked"/>
+			<label for="male">男</label>
+			<input type="radio" name="sex" value="2" id="female"/>
+			<label for="female">女</label>
+		</div>
+	</div>
+	<div class="item cf">
+		<div class="title">生日：</div>
+		<div class="con">
+			<div class="select-box">
+				<select name="year">
+					<option value="2016">2016</option>
+					<option value="2015">2015</option>
+					<option value="2014">2014</option>
+				</select>
+				年
+			</div>
+			<div class="select-box">
+				<select name="month">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12" selected>12</option>
+				</select>
+				月
+			</div>
+			<div class="select-box">
+				<select name="day">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3" selected>3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</select>
+				日
+			</div>
+		</div>
+	</div>
+	<div class="item cf">
+		<div class="title">现居地：</div>
+		<div class="con">
+			<div class="select-box">
+				<select name="country">
+					<option value="1">中国</option>
+					<option value="2">韩国</option>
+					<option value="3">俄罗斯</option>
+				</select>
+				-
+			</div>
+			<div class="select-box">
+				<select name="province">
+					<option value="1">北京</option>
+					<option value="2">陕西</option>
+					<option value="3" selected>山西</option>
+					<option value="4">黑龙江</option>
+				</select>
+				-
+			</div>
+			<div class="select-box">
+				<select name="city">
+					<option value="1">太原</option>
+					<option value="2">大同</option>
+					<option value="3" selected>长治</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="item cf">
+		<div class="title">我的性格：</div>
+		<div class="con">
+			<div class="character-box">
+				<input name="character" type="checkbox" value="1" checked="checked" id="youmo"><label for="youmo">幽默</label>
+			</div>
+			<div class="character-box">
+				<input name="character" type="checkbox" value="2" id="leguan"><label for="leguan">乐观</label>
+			</div>
+			<div class="character-box">
+				<input name="character" type="checkbox" value="3" checked="checked" id="waixiang"><label for="waixiang">外向</label>
+			</div>
+		</div>
+	</div>
+	<div class="item cf">
+		<div class="title">留言：</div>
+		<div class="con">
+			<textarea name="msg" cols="30" rows="10"></textarea>
+		</div>
+	</div>
+	<div class="item submit-box cf">
+		<input type="submit" value="提交按钮"/>
+	</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form表单</title>
+    <style type="text/css" >
+
+    </style>
+</head>
+<body>
+<form action="http://192.168.2.100:8080/getform" method="get" target="_blank" id="user-form">
+    <!--文本框-->
+    <div>文本框 <input type="text" name="username" value="文本框" maxlength="6" readonly></div>
+    <!--密码框-->
+    <div>密码框 <input type="password" name="password" maxlength="6"></div>
+    <!--单选按钮-->
+    <div>
+        <input type="radio" name="sex" value="man" checked/>男
+        <input type="radio" name="sex" value="woman"/>女
+    </div>
+    <div>
+        <input id="youxiu" type="radio" name="biaoxian" value="perfect"><label for="youxiu">优秀</label>
+        <input id="lianghao" type="radio" name="biaoxian" value="good" checked><label for="lianghao">良好</label>
+        <input id="cha" type="radio" name="biaoxian" value="bad"><label for="cha">差</label>
+    </div>
+    <!--复选框-->
+    <div>
+        您喜欢的运动是：
+        <input name="hobby" type="checkbox" value="youyong" id="youyong" checked><label for="youyong">游泳</label>
+        <input name="hobby" type="checkbox" value="lanqiu" id="lanqiu" ><label for="lanqiu">篮球</label>
+        <input name="hobby" type="checkbox" value="qiche" id="qiche" ><label for="qiche">骑车</label>
+    </div>
+    <!--隐藏域(用户不需要填写，后端可以拿到数据）-->
+    <div>
+        <input name="hi" type="hidden" value="I am hidden，隐藏域">
+    </div>
+    <!--文件表单 accept值可查找mime type列表--><!--multiple H5属性，多选-->
+    <div>
+        <input type="file" name="photo" accept="image/*" multiple="multiple">
+    </div>
+    <!--下拉列表 multiple表示可以多选-->
+    <div>
+        地区：
+        <select name="area" id="area" size="5" multiple>
+            <option value="0">北京</option>
+            <option value="1" selected>河北</option>
+            <option value="2">山西</option>
+            <option value="3">内蒙古</option>
+        </select>
+    </div>
+    <!--多行文本框-->
+    <textarea name="txt" id="" cols="10" rows="5" placeholder="我是多行文本框" style="resize: none; outline: none"></textarea>
+    <!--分组控件-->
+    <fieldset>
+        <legend>教育经历</legend>
+        大学：<input name="un" type="text">
+        高中：<input name="hs" type="text">
+    </fieldset>
+    <!--h5中Email-->
+    E-mail:
+    <input type="email" name="user_email" /><br />
+    <!--h5中url-->
+    Homepage:
+    <input type="url" list="url-list" name="user_url" /><br />
+    <datalist id="url-list">
+        <option value="http://www.w3school.com.cn">w3school</option>
+        <option value="http://www.google.com">google</option>
+        <option value="http:www.baidu.com">baidu</option>
+    </datalist>
+    <!--h5中number-->
+    Points:
+    <input type="number" name="points" min="2" max="100" step="3"/><br>
+    <!--h5中range-->
+    Points:
+    <input type="range" name="points" min="1" max="10" step="3" /><br>
+    <!--h5中日期选择器-->
+    Date:
+    <input type="date" name="user_date" /><br>
+    Month:
+    <input type="month" name="user_month"><br>
+    Week:
+    <input type="week" name="user_week"><br>
+    Time:
+    <input type="time" name="user_time"><br>
+    Datetime:
+    <input type="datetime" name="user_datetime"><br>
+    Datetime-local:
+    <input type="datetime-local" name="user_datetime-local"><br>
+    <!--h5中搜索域-->
+    Search：
+    <input type="search" name="user_search" list="se"><br>
+    <datalist id="se">
+        <option value="http://www.w3school.com.cn">w3school</option>
+        <option value="http://www.google.com">google</option>
+        <option value="http:www.baidu.com">baidu</option>
+    </datalist>
+    <!--提交/重置-->
+    <div>
+        <input type="submit">
+        <input type="reset">
+        <input type="button" value="我是普通按钮">
+    </div>
+</form>
+<div>文本框 <input type="text" name="username" value="文本框" maxlength="6" form="user-form"></div>
+
+<div style="width: 10vw; height: 10vh; background: #f00;">
+    
+</div>
+</body>
+</html>

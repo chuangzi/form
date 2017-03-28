@@ -1,0 +1,37 @@
+body, p, img, dl, dt, dd, ul, ol, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+body { position: relative; font: 12px/24px/*字号/行高*/ "Microsoft YaHei", Arial; min-width: 960px; }
+ul, ol { list-style: none; }
+img { border: 0 none; }
+input, select { vertical-align: middle; }
+table { border-collapse: collapse; }
+s, em, i { font-style: normal; text-decoration: none; }
+.cf { *zoom: 1; }
+.cf:after { clear: both; content: "."; display: block; height: 0; overflow: hidden; visibility: hidden; zoom: 1; }
+
+.box{
+    width: 500px;
+    height: 800px;
+    background: #DBDBDB;
+    margin:10px auto 0;
+    padding: 10px 0 0 20px;
+}
+.box .box1{
+    width: 80px;
+    height: 24px;
+    text-align: right;
+    margin-right: 6px;
+    float: left;
+}
+.box .floor3 .f3-2{
+    float: left;
+}
+.box .floor4 .f4-2{
+    float: left;
+}
+.box .floor5 .f5-2{
+    float: left;
+}
+.box .floor7{
+    width: 100px;
+    margin:10px auto 0;
+}

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+<div class="box">
+    <!--action中 C:\Windows\System32\drivers\etc\hosts -->
+    <form action="http://zhi.com:8080/getform" method="get">
+        <!--昵称-->
+        <div class="floor1 cf">
+            <div class="box1">
+                <span>昵称：</span>
+            </div>
+            <input type="text" name="floor1" placeholder="29940834">
+        </div>
+        <!--性别-->
+        <div class="floor2">
+            <div class="box1">
+                <span>性别：</span>
+            </div>
+            <input id="man" type="radio" name="sex" value="man" checked><label for="man">男</label>
+            <input id="woman" type="radio" name="sex" value="woman"><label for="woman">女</label>
+        </div>
+        <!--生日-->
+        <div class="floor3 cf">
+            <div class="f3-1 box1">
+                <span>生日：</span>
+            </div>
+            <div class="f3-2">
+                <select name="nian">
+                    <option value="0">2014</option>
+                    <option value="1">2015</option>
+                    <option value="2">2016</option>
+                    <option value="3" selected>2017</option>
+                </select>
+                <span>年</span>
+            </div>
+            <div class="f3-2">
+                <select name="yue">
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3" selected>4</option>
+                    <option value="4">5</option>
+                    <option value="5">6</option>
+                    <option value="6">7</option>
+                    <option value="7">8</option>
+                    <option value="8">9</option>
+                    <option value="9">10</option>
+                    <option value="10">11</option>
+                    <option value="11">12</option>
+                </select>
+                <span>月</span>
+            </div>
+            <div f3-2>
+                <select name="ri">
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                    <option value="5" selected>6</option>
+                    <option value="6">7</option>
+                    <option value="7">8</option>
+                    <option value="8">9</option>
+                    <option value="9">10</option>
+                    <option value="10">11</option>
+                    <option value="11">12</option>
+                </select>
+                <span>日</span>
+            </div>
+        </div>
+        <!--居住地-->
+        <div class="floor4 cf">
+            <div class="f4-1 box1">
+                <span>现居地：</span>
+            </div>
+            <div class="f4-2">
+                <select name="country" id="">
+                    <option value="0" selected>中国</option>
+                    <option value="1">美国</option>
+                    <option value="2">法国</option>
+                    <option value="3">俄罗斯</option>
+                </select>
+                <span>-</span>
+            </div>
+            <div class="f4-2">
+                <select name="city">
+                    <option value="0" selected>北京</option>
+                    <option value="1">河北</option>
+                    <option value="2">山西</option>
+                    <option value="3">张家口</option>
+                </select>
+                <span>-</span>
+            </div>
+            <div class="f4-2">
+                <select name="area">
+                    <option value="0" selected>昌平</option>
+                    <option value="1">石家庄</option>
+                    <option value="2">长治</option>
+                    <option value="3">宣化</option>
+                </select>
+            </div>
+        </div>
+        <!--家乡-->
+        <div class="floor5 cf">
+            <div class="f5-1 box1">
+                <span>家乡：</span>
+            </div>
+            <div class="f5-2">
+                <select name="country">
+                    <option value="0" selected>中国</option>
+                    <option value="1">美国</option>
+                    <option value="2">法国</option>
+                    <option value="3">俄罗斯</option>
+                </select>
+                <span>-</span>
+            </div>
+            <div class="f5-2">
+                <select name="city">
+                    <option value="0" selected>北京</option>
+                    <option value="1">河北</option>
+                    <option value="2">山西</option>
+                    <option value="3">张家口</option>
+                </select>
+                <span>-</span>
+            </div>
+            <div class="f5-2">
+                <select name="area">
+                    <option value="0" selected>昌平</option>
+                    <option value="1">石家庄</option>
+                    <option value="2">长治</option>
+                    <option value="3">宣化</option>
+                </select>
+            </div>
+        </div>
+        <!--我的性格-->
+        <div class="floor6">
+            <div class="box1">
+                <span>我的性格：</span>
+            </div>
+            <input type="checkbox" name="character" value="youmo" id="youmo"><label for="youmo">幽默</label>
+            <input type="checkbox" name="character" value="leguan" id="leguan"><label for="leguan">乐观</label>
+            <input type="checkbox" name="character" value="waixiang" id="waixiang"><label for="waixiang">外向</label>
+            <input type="checkbox" name="character" value="neixiang" id="neixiang"><label for="neixiang">内向</label>
+            <input type="checkbox" name="character" value="jinshen" id="jinshen"><label for="jinshen">谨慎</label>
+            <input type="checkbox" name="character" value="danda" id="danda"><label for="danda">胆大</label>
+            <input type="checkbox" name="character" value="keai" id="keai"><label for="keai">可爱</label>
+        </div>
+        <!--提交-->
+        <div class="floor7">
+            <input type="submit">
+            <input type="reset">
+        </div>
+    </form>
+</div>
+</body>
+</html>
